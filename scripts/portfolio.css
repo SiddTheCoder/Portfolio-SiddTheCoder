@@ -5,17 +5,23 @@
 }
 
 .nav{
+    position: fixed;
+    width: 80%;
+    transform: translateY(40%) translateX(12%);
+    border-radius: 100px;
+    margin: auto;
     display: flex;
     height: 9vh;
-    background-color: yellow ;
-    justify-content: space-between;
+    background-color: rgba(255, 255, 0, 0.358) ;
+    backdrop-filter: blur(10px);
+    justify-content: space-evenly;
     align-items: center;
 }
 .logo{
     position: relative;
     left: 5vw;
 }
-.linkers{
+.nav-right{
     position: relative;
     right: 2vw;
     display: flex;
@@ -23,85 +29,32 @@
     list-style-type: none;
 }
 
-.linkers li{
+.nav-right li{
+    font-family: 'Poppins';
     border: 0px solid white;
     padding: 0.5vw;
-    background-color: #ffffff41;
+    background-color:;
     transition: all 150ms ease;
-    transform: scale(1);
+    font-weight: 450;
+    transform: scale(1.15);
     border-radius: 100px;
 }
-.linkers li:hover{
+.nav-right li:hover{
     color: white;
     transform: scale(1.1);
     background-color: orange;
 }
-.container{
-    display: flex;
 
-    .ct-lft{
-        flex: 50%;
-
-        .ct-container{
-            transform: translateY(250%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            h1{
-                font-weight: 700;
-               color: white;
-                .dg{
-                    color:aqua;
-                }
-            }
-
-            .hero-btn{
-                font-weight: 900;
-                gap: 10vw;
-                align-items: center;
-                transform: translateY(200%);
-                display: flex;
-                justify-content: space-between;
-
-                .btn{
-                    border-radius: 100px;
-                    padding: 1vw;
-                    border: none;
-                    background-color: #ffffffd0;
-                    transition: 150ms ease;
-                    transform: scale(1);
-                }
-                .btn:hover{
-                    transform: scale(1.1);
-                    background-color: orange;
-                    color: white;
-                }
-            }
-        }
-    }
-    .ct-rgt{
-        flex: 50%;
-      
-        img{
-            position: relative;
-            left: 11vw;
-            top: 5vw;
-            transform: scale(1.1);
-            animation: scaller 3s ease infinite;
-        }
-
-    }
+.lander{
+    background-color: #222831;
+    height: 100vh;
+    width: 100%;
 }
-@keyframes scaller {
-    0%{
-       transform : scale(1.12);
-    }
-   50%{
-       transform : scale(1.1);
-   }
-  100%{
-   transform : scale(1.1);
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
-}

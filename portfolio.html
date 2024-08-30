@@ -14,51 +14,39 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<style>
-    .container{
-        height: 90vh;
-        width: 100%;
-        background-image: url('img/her-bg.png');
-        background-repeat: none;
-        background-size: cover;
-    }
-</style>
 </head>
 <body>
-    <header class="nav">
-        <div class="logo">
-            <h3>Logo</h3>
-        </div>
-        <div class="linkers">
-            <li class="linkers-item">Contact</li>
-            <li class="linkers-item">About</li>
-            <li class="linkers-item">Project</li>
-            <li class="fixed ">Join</li>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-        <div class="ct-lft">
-        <div class="ct-container">
-            <h1>
-                <img src="img/lines.png" alt="" width="400vw" style="position: absolute;
-                top: 1vw;">
-                It's Me <span class="dg">SiddTheCoder</span>
-            </h1>
-            <div class="hero-btn">
-                <button class="btn">
-                    Join With Me
-                </button>
-                <button class="btn">
-                    See My Projects
-                </button>
+    <header>
+        <div class="nav">
+            <div class="nav-left">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-right">
+                <li>About Me</li>
+                <li>Address</li>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>Media</li>
             </div>
         </div>
-        </div>
-        <div class="ct-rgt">
-            <img src="img/mmbg.png" alt="Image">
-        </div>
+    </header>
+    
+    <main>
+        <div class="lander">
+
         </div>
     </main>
+
+    <script>
+        window.onload = function() {
+  Particles.init({
+    selector: '.background'
+  });
+};
+    </script>
+    <canvas class="background"></canvas>
+    <script src="path/to/particles.min.js"></script>
+    <!-- Js Scripts FIles -->
+    <script src="path/to/particles.min.js"></script>
 </body>
 </html>
