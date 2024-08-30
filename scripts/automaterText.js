@@ -1,8 +1,8 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-const words = ["Data Science", "Web Development", "App Development", "Front-End", "Machine Learning", "Artificial Intelligence","Back-End"];
-const typingDelay = 180;
+const words = ["Data Wizard","Coder Of The Year ASIA 2050 Summit", "Software Developer","Digital Alchemy", "Mobile Magic", "Interface Artistry", "AI Alchemy", "Digital Consciousness", "Server Sorcery"];
+const typingDelay = 130;
 const erasingDelay = 170;
 const newLetterDelay = 500;
 let index = 0;
