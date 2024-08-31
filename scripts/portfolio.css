@@ -186,6 +186,9 @@ flex: 40%;
         background-color: #fff;
         width: 250px;
     }
+    .up-item:hover{
+        content: "Hello";
+    }
 }
 .hr1-container .project-down{
     margin-top: 10px;
