@@ -160,8 +160,8 @@ flex: 40%;
     height:80vh;
     width: 90%;
     margin: auto;
-    background-color: #ffffff00;
     padding: 1vw;
+    background-color: rgba(128, 0, 128, 0.044);
 }
 .title{
     display: flex;
@@ -183,12 +183,35 @@ flex: 40%;
     justify-content: space-evenly;
     .up-item{
         height: 100%;
-        background-color: #fff;
+        /* background-color: #fff; */
         width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* overflow: hidden; */
+
     }
-    .up-item:hover{
-        content: "Hello";
+}
+.project-img{
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    img{
+        width: 16vw;
+        transform: scale(1) scaleX(1.3) translateX(1px);
+        transition: all 200ms ease;
     }
+}
+.project-img img:hover{
+    transform: scale(1.5) rotate(-10deg);
+}
+.project-title{
+    width: 100%;
+    text-align: center;
+  background-color: purple;
+  padding: 5px;
+  color: white;
 }
 .hr1-container .project-down{
     margin-top: 10px;
@@ -201,6 +224,11 @@ flex: 40%;
         background-color: #fff;
         width: 250px;
     }
+    .project-title{
+        background-color: purple;
+        padding: 5px;
+        color: white;
+      }
 }
 .show-more-btn{
     border: none;
