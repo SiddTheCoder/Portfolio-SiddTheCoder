@@ -1,1 +1,0 @@
-class="animate__animated animate__bounce"
