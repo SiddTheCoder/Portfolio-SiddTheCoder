@@ -42,7 +42,9 @@ body{
     gap: 2vw;
     list-style-type: none;
 }
-
+.item-wrapper{
+    display: none;
+}
 .nav-right li{
     cursor: pointer;
     font-family: 'Poppins';
@@ -150,7 +152,9 @@ flex: 40%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.title-main{
+    display: none;
+}
 .hr1-container{
     border-radius: 10vh;
     backdrop-filter: blur(10px);
@@ -240,7 +244,7 @@ flex: 40%;
     color: white;
     width: 10%;
     font-size: 1.2rem;
-    border-radius: 80px;
+    border-radius: 50px;
     transform: translateX(450%) translateY(25%);
     animation: bgChanger 500ms ease-in-out infinite;
 }
