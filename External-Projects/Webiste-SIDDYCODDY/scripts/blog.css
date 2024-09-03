@@ -58,7 +58,7 @@ header nav {
             border: none;
             border-radius: 15px;
             background-color: #0f2b38;
-            transition: background 300ms;
+            transition: all 300ms;
 
             i {
                 padding: 1.1vw;
@@ -228,8 +228,8 @@ header nav {
     }
 
     article {
-        width: 61.5vw;
-        height: 43vw;
+        width: 100vw;
+        height: 100vh;
         background-color: #040D12;
         padding: 0.5vw 1vw 0 1vw;
         color: white;
@@ -237,7 +237,8 @@ header nav {
 
         .user-post-section {
             background-color: #232D3F;
-            height: 19vh;
+            height: unset;
+            padding-top: 1vw;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
@@ -333,7 +334,7 @@ header nav {
                     color: white;
                     background-color: #232D3F;
                     padding: 1vw 2vw 2vw 2vw;
-                    transition: background, border 300ms;
+                    transition: all 300ms ease;
                 }
 
                 button:hover {
@@ -553,6 +554,91 @@ header nav {
                     width: 3.5vw;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 800px) { 
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        height: 7vh;
+        .center{
+          gap: 11vh;
+          transform: translateX(6vw);
+            i{
+                transform: scale(4);
+                color: white;
+            }
+            i:hover{
+                color: orange;
+            }
+        }
+    .left,.right{
+        display: none;
+    }
+
+    }
+    .container .left,.right{
+        display: none;
+    }
+    .scroll-bar {
+        min-height: 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
+    
+        &::-webkit-scrollbar {
+            width: 0.1px;
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: #eceef2;
+            border-radius: 180px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #9b9b9b;
+            border-radius: 180px;
+        }
+    
+    }
+    .container{
+        
+        width: 100%;
+        height: 100vh;
+    }
+    article{
+        width: 100%;
+        height: unset;
+
+        .user-post-section {
+           justify-content: center;
+           align-items: center;
+           height: unset;
+        }
+        .top-pp-feed{
+            height: 5vh;
+            justify-content: space-around;
+            width: 100%;
+            img {
+                transform: scale(3) translateX(-200%);             
+                clip-path: circle(20%);
+                position: relative;
+                bottom: 3.44vw;
+            }
+           }
+
+           .user-feed {
+            display: none;
+        }
+    }
+
+    .random-user-post-section{
+        margin-top: 30vh;
+        height: unset;
+
+        .first-section-pp{
+            width: 100%;
         }
     }
 }
