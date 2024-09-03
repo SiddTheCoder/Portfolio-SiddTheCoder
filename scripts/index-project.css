@@ -4,6 +4,7 @@
     font-family: 'Poppins';
 }
 a{
+    text-decoration: none;
     color: black;
     font-weight: 600;
 }
@@ -47,7 +48,7 @@ a{
 .project-item{
     border-radius: 10px;
     position: relative;
-    min-height: 390px;
+    min-height: 400px;
     min-width: 300px;
     background-color: rgb(154, 53, 53);
     border-radius: 10px ;
